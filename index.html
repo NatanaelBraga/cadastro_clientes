@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastro de Clientes</h1>
+      <form id="form-cadastro">
+        <input type="hidden" id="cliente-id">
+        <label for="cliente-nome">Nome:</label>
+        <input type="text" id="cliente-nome" required>
+        <label for="cliente-sobrenome">Sobrenome:</label>
+        <input type="text" id="cliente-sobrenome" required>
+        <label for="cliente-rg">RG:</label>
+        <input type="text" id="cliente-rg" required>
+        <label for="cliente-cpf">CPF:</label>
+        <input type="text" id="cliente-cpf" required>
+        <label for="cliente-email">E-mail:</label>
+        <input type="email" id="cliente-email" required>
+        <label for="cliente-nascimento">Data de Nascimento:</label>
+        <input type="date" id="cliente-nascimento" required>
+        <label for="cliente-cep">CEP:</label>
+        <input type="text" id="cliente-cep" required>
+        <label for="cliente-endereco">Endereço:</label>
+        <input type="text" id="cliente-endereco" required>
+        <label for="cliente-observacoes">Observações:</label>
+        <textarea id="cliente-observacoes"></textarea>
+        <button type="submit" id="botao-salvar">Salvar</button>
+        <button type="button" id="botao-cancelar">Cancelar</button>
+      </form>
+      <button type="button" id="botao-importar">Importar Excel</button>
+      <button type="button" id="botao-exportar">Exportar Excel</button>
+      <button type="button" id="botao-modo-escuro">Modo Escuro</button>
+      <input type="text" id="campo-busca" placeholder="Buscar clientes...">
+      <table id="tabela-clientes">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>RG</th>
+            <th>CPF</th>
+            <th>E-mail</th>
+            <th>Data de Nascimento</th>
+            <th>Idade</th>
+            <th>Endereço</th>
+            <th>Observações</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
